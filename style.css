@@ -1,0 +1,71 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(https://img.freepik.com/premium-photo/2020-merry-christmas-new-year-holidays-background_182029-1770.jpg?semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    width: 400px;
+    height: 300px;
+    background: url(https://moya-planeta.ru/upload/images/xl/10/2d/102d8d4fcb73bd20af8a6a40cb2a0fc8fb99a927.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border-radius: 15px;
+    position: relative;
+    animation: appearCard 1.5s;
+}
+
+
+@keyframes appearCard{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0,5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.card-content {
+    background-color: rgb(0, 0, 0, 0.6);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 15px;
+
+}
+
+
+h1, p{
+    margin: 0;
+}
+
+.card-btn { 
+    background-color: rgb(66, 197, 230);
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.card-btn:hover{
+    background-color: rgb(54, 160, 160);
+    transform: scale(1.1);
+}
+
